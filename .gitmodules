@@ -1,0 +1,3 @@
+[submodule "Doggo"]
+	path = Doggo
+	url = https://github.com/Nate711/Doggo.git
