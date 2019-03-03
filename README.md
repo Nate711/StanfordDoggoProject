@@ -34,7 +34,7 @@ Full, downloadable Fusion 360 CAD: https://a360.co/2OBxTbH
 Teensy code: https://github.com/Nate711/Doggo
 ODrive fork: https://github.com/Nate711/ODrive
 
-![|](/uploads/default/original/2X/e/ef9d9d5532b8613f056f269fa780cef597a7fa1a.jpeg)
+![hero](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/hero.jpg)
 
 # Mechanical Design
 
