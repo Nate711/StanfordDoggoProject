@@ -1,4 +1,4 @@
-
+![hero](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/hero.jpg)
 
 # The Stanford Doggo Project
 ## Overview Of Stanford Doggo
@@ -33,8 +33,6 @@ GitHub project repository: https://github.com/Nate711/StanfordDoggoProject
 Full, downloadable Fusion 360 CAD: https://a360.co/2OBxTbH
 Teensy code: https://github.com/Nate711/Doggo
 ODrive fork: https://github.com/Nate711/ODrive
-
-![hero](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/hero.jpg)
 
 # Mechanical Design
 
