@@ -57,7 +57,7 @@ Doggo has four, 2DOF legs of the SCARA flavor. By SCARA flavor I mean that each 
 ### Joints
 For each joint, there are two deep groove ball bearings stacked next to each other in on link, and a shoulder bolt goes through them and threads into the opposing link.
 
-![|](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/joint.jpeg)
+![|](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/joint.png)
 
 ### Feet
 The robot feet are silicone pieces that we made using a 3D printed, 2-part mold.
@@ -76,7 +76,7 @@ Doggo has four v3.5, 48V ODrives, two for each leg, mounted on the carbon fiber 
 Last, but not least, each motor has a AS5047P encoder to track the motor angle. We actually are only using the incremental interface, because at the time we built the robot, there was no absolute encoder support on the ODrive and we couldn&rsquo;t make the index pin functionality work either.
 
 #### Electronics schematic
-![|](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/wiring.jpeg)
+![|](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/wiring.png)
 
 #### Layout of ODrives
 ![|394x526](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/sides.jpeg)
@@ -97,7 +97,7 @@ The Doggo software is relatively simple as far as things go. The gist of it is t
 
 The robot walks, trots, bounds, and pronks by commanding different sinusoidal open-loop trajectories to the four ODrives. The leg trajectories are composed of two halves of sinusoidal curves for the flight and stance phases shown in orange and purple in the picture. The geometric parameters of the sinusoids, the virtual leg compliance, and the duration of time that the leg spends traversing each sinusoidal segment, were varied to create different gaits.
 
-![|265x299](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/trajectory.jpeg)
+![|265x299](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/trajectory.png)
 
 At any given time, the Teensy computes the desired foot locations in cartesian coordinates, and then converts them to leg angles (θ) and leg separations (γ). These two numbers describe the virtual leg that originates at the hip joint of the leg and terminates at the foot.
 
