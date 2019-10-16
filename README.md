@@ -2,7 +2,7 @@
 
 # The Stanford Doggo Project
 ## Overview Of Stanford Doggo
-Stanford Doggo is a highly agile robot designed to be an accessible platform for legged robot research. The robot currently holds the record (among all robots) for the highest vertical jumping agility<sup>1</sup> and can jump twice as high as any existing quadruped robot! Weighing in at a little less than 5kg, Stanford Doggo is easy and safe to develop on, but at the same time, don't expect Stanford Doggo to carry heavy loads or climb super aggressive terrain. If you use a portion of this project or want further technical details, please cite our paper presented at ICRA 2019: https://arxiv.org/abs/1905.04254. The project is generously supported by Stanford Student Robotics http://roboticsclub.stanford.edu/.
+Stanford Doggo is a highly agile robot designed to be an accessible platform for legged robot research. The robot currently holds the record (among all robots) for the highest vertical jumping agility<sup>1</sup> and can jump twice as high as any existing quadruped robot! Weighing in at a little less than 5kg, Stanford Doggo is easy and safe to develop on, but at the same time, don't expect Stanford Doggo to carry heavy loads or climb super aggressive terrain. If you use a portion of this project or want further technical details, please cite our paper presented at ICRA 2019: https://ieeexplore.ieee.org/document/8794436 (freely available on arxiv: https://arxiv.org/abs/1905.04254). The project is generously supported by Stanford Student Robotics http://roboticsclub.stanford.edu/.
 
 <sup>1</sup>[Vertical jumping agility] = [maximum vertical jump height] / [time from onset of actuation to apogee of jump]
 
