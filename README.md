@@ -107,3 +107,61 @@ These virtual leg parameters (theta and gamma) and their corresponding virtual s
 We implemented a custom binary UART protocol to send and receive data. The binary protocol is significantly faster than the ASCII protocol, which (I think) was the only protocol implemented for the Arduino when we built the robot. If you'd like more of the specifics, visit https://github.com/Nate711/Doggo/blob/master/lib/ODriveArduino/ODriveArduino.cpp
 
 **I think that about wraps everything up! Let me know if you have questions, and I&rsquo;ll also try to update the post if people are interested in more details.**
+
+# FAQ
+## The sub-folders are empty!
+Run this to populate the folders.
+```shell
+git submodule update --init --recursive --remote
+```
+## How do I configure the ODrive parameters for Doggo?
+We use the script ```https://github.com/Nate711/ODrive/blob/master/tools/doggo_setup.py```
+## How are the legs numbered?
+Leg0 is the front left, leg1 is the back left, leg2 is the back right, and leg3 is the front right.
+## How do I calibrate the legs?
+This is a sore spot for the robot right now. When you power on the robot, all the driven linkages (ie top links) need to be as horizontal as possible. If everything is set up correctly, the motors will then begin their calibration routine which involves them rotating about 120 degrees to one side and then back. After this, the robot is ready.
+## Can it turn?
+Yes and no. It turns very slowly with the 'Y' command. The turning speed is set by 's [desired step difference]' where the step difference should be around -0.1 to 0.1 at the most.
+## Which way should the IMU point?
+There are little markings on the BNO080 board which indicate which way x is positive. Align that direction with the forward direction of the robot. The forward direction is towards the motors connected to ODrives 0 and 3. 
+## How are the ODrives connected to the Teensy?
+We use serial connections between the Teensy and ODrives so for each ODrive you'll need to connect Teensy RX to ODrive TX and Teensy TX to ODrive RX. Since there are four ODrives, you'll have to connect up four sets of these serial connections!
+
+In code we have these definitions which may help with wiring:
+```cpp
+HardwareSerial& odrv0Serial = Serial1;
+HardwareSerial& odrv1Serial = Serial2;
+HardwareSerial& odrv2Serial = Serial3;
+HardwareSerial& odrv3Serial = Serial4;
+```
+
+Here's also a little chart made by HelloPlanet!
+```
+Teensy3.5 --- Logical Function --- Component
+P0 - RX1 - ODrive1 (odrv0)
+P1 - TX1 - ODrive1 (odrv0)
+
+P7 - RX3 - ODrive3 (odrv2)
+P8 - TX3 - ODrive3 (odrv2)
+
+P9 - RX2 - ODrive2 (odrv1)
+P10 - TX2 - ODrive2 (odrv1)
+
+P31 - RX4 - ODrive4 (odrv3)
+P32 - TX4 - ODrive4 (odrv3)
+```
+## How is the Xbee wired?
+We connect it via serial to Serial5. We also have a definition in ```config.h``` called ```USE_XBEE``` that determines whether the code should use the actual USB port on the Teensy or the Xbee for communications. 
+## How is the IMU wired?
+We connect it via SPI with the following defines.
+```cpp
+//Pins for BNO080 IMU
+#define SPI_CS_PIN 15
+#define SPI_WAK_PIN 14
+#define SPI_INTPIN 17
+#define SPI_RSTPIN 16
+```
+## How does the relay get wired up?
+We now use a solid-state relay https://www.digikey.com/product-detail/en/sensata-crydom/D06D100/CC1520-ND/353618 with the output terminals in series with the main power and the input terminals connected to an external battery with a switch. We have the switch wired up in serial so that pressing the switch will turn on/off the relay and thus the robot's main power.
+## The CAD doesn't download correctly
+This is unfortunately not a problem on our end but on Fusion's. Fusion customer service has in the past been able to fix corrupted uploads on their server.
