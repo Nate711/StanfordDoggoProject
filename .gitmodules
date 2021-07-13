@@ -1,7 +1,0 @@
-[submodule "Doggo"]
-	path = Doggo
-	url = https://github.com/Nate711/Doggo.git
-[submodule "ODrive"]
-	path = ODrive
-	url = https://github.com/Nate711/ODrive.git
-	branch = PD_CONTROL

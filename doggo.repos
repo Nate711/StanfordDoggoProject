@@ -1,0 +1,26 @@
+repositories:
+  # doggo
+  doggo:
+    type: git
+    url: git@github.com:Avenriy/Doggo.git
+    version: main
+  doggo/Hardware:
+    type: git
+    url: git@github.com:Avenriy/DoggoHardware.git
+    version: main
+  vendor/odrive:
+    type: git
+    url: git@github.com:odriverobotics/ODrive.git
+    version: fw-v0.5.1
+  doggo/lib/ChRt:
+    type: git
+    url: git@github.com:Avenriy/ChRt.git
+    version: master
+  doggo/lib/SdFat:
+    type: git
+    url: git@github.com:Avenriy/SdFat.git
+    version: 46aff556c5ecad832ca3f19e184fd06e765f5641
+  doggo/lib/SparkFun_BNO080_Arduino_Library:
+    type: git
+    url: git@github.com:Avenriy/SparkFun_BNO080_Arduino_Library.git
+    version: master
