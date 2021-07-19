@@ -24,3 +24,7 @@ repositories:
     type: git
     url: git@github.com:Avenriy/SparkFun_BNO080_Arduino_Library.git
     version: master
+  simulator/unity:
+    type: git
+    url: git@github.com:Avenriy/doggo_unity.git
+    version: master
