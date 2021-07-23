@@ -12,6 +12,10 @@ repositories:
     type: git
     url: git@github.com:odriverobotics/ODrive.git
     version: fw-v0.5.1
+  vendor/odrive_config:
+    type: git
+    url: git@github.com:Avenriy/odrive_configure.git
+    version: main
   doggo/lib/ChRt:
     type: git
     url: git@github.com:Avenriy/ChRt.git
