@@ -1,5 +1,25 @@
 ![hero](https://github.com/Nate711/StanfordDoggoProject/blob/master/images/hero.jpg)
 
+# End-of-life notice
+Thank you everyone for your interest and support over the last 6 years for this project! 
+
+We are hard at work building a new robot, Pupper v3, and so would like to stop supporting this project. Thanks for your understanding! Pupper v3 is fully open source and build instructions will be released in the coming months. 
+
+![20240701_232332](https://github.com/stanfordroboticsclub/StanfordQuadruped/assets/1295426/96d09d2b-9d99-4a0b-b30b-6e317d7b286b)
+
+![20240701_231506](https://github.com/stanfordroboticsclub/StanfordQuadruped/assets/1295426/d9875ccf-be3f-496c-a22b-aaab4f5fc9fd)
+
+![IMG_2942](https://github.com/stanfordroboticsclub/StanfordQuadruped/assets/1295426/c6f1de38-a013-402b-a1e2-f924573ec48e)
+
+Quick specs for Pupper v3
+* Powerful 400W GIM4305 brushless motors
+* Raspberry Pi 5
+* Reinforcement learning locomotion policy out-of-the-box
+* Luxonis SR depth camera
+* LCD screen for debugging and facial expressions
+* Roughly $1000 BOM
+
+
 # The Stanford Doggo Project
 ## Overview Of Stanford Doggo
 Stanford Doggo is a highly agile robot designed to be an accessible platform for legged robot research. The robot currently holds the record (among all robots) for the highest vertical jumping agility<sup>1</sup> and can jump twice as high as any existing quadruped robot! Weighing in at a little less than 5kg, Stanford Doggo is easy and safe to develop on, but at the same time, don't expect Stanford Doggo to carry heavy loads or climb super aggressive terrain. If you use a portion of this project or want further technical details, please cite our paper presented at ICRA 2019: https://ieeexplore.ieee.org/document/8794436 (freely available on arxiv: https://arxiv.org/abs/1905.04254). The project is generously supported by Stanford Student Robotics http://roboticsclub.stanford.edu/.
