@@ -3,7 +3,7 @@
 # End-of-life notice
 Thank you everyone for your interest and support over the last 6 years for this project! 
 
-We are hard at work building a new robot, Pupper v3, and so would like to stop supporting this project. Thanks for your understanding! Pupper v3 is fully open source and build instructions will be released in the coming months. 
+We are hard at work building a new robot, Pupper v3, and so would like to stop supporting this project. Thanks for your understanding! Pupper v3 is fully open source and build instructions will be released in the coming months. You can find preliminary information here https://pupper-v3-documentation.readthedocs.io/en/latest/index.html 
 
 ![20240701_232332](https://github.com/stanfordroboticsclub/StanfordQuadruped/assets/1295426/96d09d2b-9d99-4a0b-b30b-6e317d7b286b)
 
